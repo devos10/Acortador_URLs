@@ -34,7 +34,7 @@
             <input name="alias" class="form-control" placeholder="Alias opcional (ej. evento2025)">
         </div>
         <div class="col-md-4"> <!-- Centra el campo de expiración -->
-            <select class="form-select" name="exp" aria-label="Expiración">
+            <select class="form-select" name="expiracion" aria-label="Expiración">
                 <option value="">Sin expiración</option>
                 <option value="1">Expira en 1 día</option>
                 <option value="7">Expira en 7 días</option>
