@@ -22,7 +22,7 @@
         </div>
 
 
-      <form class="card p-4 shadow border-0" method="GET" action="../php/procesar_url.php" style="background:#111827"
+      <form class="card p-4 shadow border-0" method="GET" action="../php/acortar_url.php" style="background:#111827"
       hx-target="#resultado" hx-swap="innerHTML">
     <div class="mb-3">
         <label class="form-label text-white">URL larga</label>
