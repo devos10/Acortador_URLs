@@ -22,15 +22,15 @@
         </div>
 
 
-        <form class="card p-4 shadow border-0" style="background:#111827"
+        <form class="card p-4 shadow border-0" method="GET" action="../php/procesar_url.php" style="background:#111827"
             hx-target="#resultado" hx-swap="innerHTML">
             <div class="mb-3">
                 <label class="form-label text-white">URL larga</label>
                 <input type="url" name="url" class="form-control" placeholder="https://..." required>
                 <div class="form-text text-secondary">Solo http/https</div>
             </div>
-            <div class="row g-2">
-                <div class="col-md-8">
+            <div class="row g-3">
+                <div class="col-md-4">
                     <input name="alias" class="form-control" placeholder="Alias opcional (ej. evento2025)">
                 </div>
                 <div class="col-md-4">
@@ -41,7 +41,12 @@
                         <option value="30">Expira en 30 días</option>
                     </select>
                 </div>
+                <div class="col-md-4">
+                <button type="submit" class=" button raise">Enviar</button>
             </div>
+            </div>
+            
+        </form>
 </body>
 
 </html>
