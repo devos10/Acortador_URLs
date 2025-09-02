@@ -22,31 +22,32 @@
         </div>
 
 
-        <form class="card p-4 shadow border-0" method="GET" action="../php/procesar_url.php" style="background:#111827"
-            hx-target="#resultado" hx-swap="innerHTML">
-            <div class="mb-3">
-                <label class="form-label text-white">URL larga</label>
-                <input type="url" name="url" class="form-control" placeholder="https://..." required>
-                <div class="form-text text-secondary">Solo http/https</div>
-            </div>
-            <div class="row g-3">
-                <div class="col-md-4">
-                    <input name="alias" class="form-control" placeholder="Alias opcional (ej. evento2025)">
-                </div>
-                <div class="col-md-4">
-                    <select class="form-select" name="exp" aria-label="Expiración">
-                        <option value="">Sin expiración</option>
-                        <option value="1">Expira en 1 día</option>
-                        <option value="7">Expira en 7 días</option>
-                        <option value="30">Expira en 30 días</option>
-                    </select>
-                </div>
-                <div class="col-md-4">
-                <button type="submit" class=" button raise">Enviar</button>
-            </div>
-            </div>
-            
-        </form>
+      <form class="card p-4 shadow border-0" method="GET" action="../php/procesar_url.php" style="background:#111827"
+      hx-target="#resultado" hx-swap="innerHTML">
+    <div class="mb-3">
+        <label class="form-label text-white">URL larga</label>
+        <input type="url" name="url" class="form-control" placeholder="https://..." required>
+        <div class="form-text text-secondary">Solo http/https</div>
+    </div>
+    <div class="row g-4 d-flex justify-content-center"> <!-- Centra todo el contenido de la fila -->
+        <div class="col-md-4">
+            <input name="alias" class="form-control" placeholder="Alias opcional (ej. evento2025)">
+        </div>
+        <div class="col-md-4"> <!-- Centra el campo de expiración -->
+            <select class="form-select" name="exp" aria-label="Expiración">
+                <option value="">Sin expiración</option>
+                <option value="1">Expira en 1 día</option>
+                <option value="7">Expira en 7 días</option>
+                <option value="30">Expira en 30 días</option>
+            </select>
+        </div>
+        <div class="col-md-4  d-flex justify-content-end">
+            <button type="submit" class="button raise">Enviar</button>
+        </div>
+    </div>
+</form>
+
+
 </body>
 
 </html>
