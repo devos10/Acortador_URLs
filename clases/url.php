@@ -1,5 +1,5 @@
 <?php
-include "bd/conexion.php";
+include "../bd/conexion.php";
 /* */
 
 class Url extends Conexion{
