@@ -3,7 +3,9 @@
 Un proyecto para acortar enlaces largos en URLs cortas y fáciles de compartir.  
 
 ## 📌 Estado del proyecto
-**Estatus:** 🚧 En proceso  
+
+:construction: En desarrollo :construction:
+<p align="left">   <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">   </p>
 
 Este proyecto aún está en desarrollo activo. Las funcionalidades pueden cambiar y no se recomienda para producción por ahora.
 
@@ -16,16 +18,13 @@ La idea es crear un sistema que:
 ## 🛠️ Tecnologías (planeadas)
 - Backend: (PHP)
 - Base de datos: (MySQL)
-- Frontend: HTML, CSS, JavaScript
+- Frontend: HTML, CSS, HTMX, BOOTSTRAP
 
 ## ⚙️ Instalación (próximamente)
 Instrucciones de instalación serán añadidas una vez el proyecto tenga una versión funcional.
 
-## ✨ Próximos pasos
-- [ ] Configurar la estructura básica del proyecto.
-- [ ] Implementar la lógica de generación de URLs cortas.
-- [ ] Crear interfaz básica para ingresar URLs.
-- [ ] Documentar endpoints en el README.
+## ✨ DESARROLLO 
+Actualmente el sistema acepta urls largas puedes mandar vigencia y alias, como tal ya es funcional, pero aun necesita mejoras
 
 ---
 💡 **Nota:** Si quieres contribuir, este proyecto aún está en fase inicial. Toda sugerencia es bienvenida.
