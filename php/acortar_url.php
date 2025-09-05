@@ -18,7 +18,7 @@ function cortarUrl($url, $alias = null, $expiracion = null)
     $path = parse_url($url, PHP_URL_PATH); // obtiene el path de la URL
     if (!$path || $path === "/") {
         // La URL es solo el dominio base
-        $url_corta = $scheme . "://" . $url_hash_corta;
+        $url_corta = $scheme . "://" . $url_hash_corta.$alias.$expiracion;
     } else {
         // La URL tiene un path o más
         if (!$alias) {
@@ -41,8 +41,8 @@ if (isset($_GET)) {
     //$dominio=$_SERVER['HTTP_HOST'];
     $host = parse_url($url_larga, PHP_URL_HOST); // devuelve solo el host
     $scheme = parse_url($url_larga, PHP_URL_SCHEME); // Devuelve "https" o "http"
-    var_dump($host);
-    var_dump($scheme);
+   // var_dump($host);
+   // var_dump($scheme);
     //en nuestro if validamos que sea una url valida si si procedemos a hacer todo nuestro cambio
     if (filter_var($url_larga, FILTER_VALIDATE_URL)) {
         //echo "La URL '$url_larga' es válida.";
