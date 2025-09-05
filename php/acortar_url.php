@@ -16,11 +16,11 @@ function cortarUrl($url,$alias=null, $expiracion=null){
     $url_corta="";
     //si alias es nulo entonces tomamos el hash
     if(!$alias){
-        $url_corta=$scheme."://".$host."/".$url_hash_corta;
+        $url_corta=$scheme."://".$host."/".$url_hash_corta.$expiracion;
         
     }else{
         //si no es nulo el alias entonces tomamos el alias, y el hash corto
-        $url_corta=$scheme."://".$host."/".$alias.$url_hash_corta;
+        $url_corta=$scheme."://".$host."/".$alias.$url_hash_corta.$expiracion;
         
     }
     // Retornamos un array con ambos valores
@@ -33,8 +33,9 @@ function cortarUrl($url,$alias=null, $expiracion=null){
 if(isset($_GET)){
     $url_larga=$_GET['url']; //aqui obtenemos la url que nos envie el usuario
     $alias=$_GET['alias']; //el alias de la url si es que lo desea el usuario
-    $expiracion=$_GET['expiracion']; //la cantidad de tiempo que debe de durar la url
-   // $dominio=$_SERVER['HTTP_HOST'];
+    $expiracion=intval($_GET['expiracion']) ?? 0; //la cantidad de tiempo que debe de durar la url la pasamos a tipo entero
+    //var_dump($expiracion);
+   //$dominio=$_SERVER['HTTP_HOST'];
    //en nuestro if validamos que sea una url valida si si procedemos a hacer todo nuestro cambio
     if(filter_var($url_larga,FILTER_VALIDATE_URL)){
         //echo "La URL '$url_larga' es válida.";
