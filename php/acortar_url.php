@@ -70,7 +70,7 @@ if (isset($_GET)) {
                 }
             });
         </script>";
-            echo "<div>La url es <a href=\"$url_larga\" target=\"_blank\" style=\"color:#fff; text-decoration:underline;\">$url_corta</a> </div>";
+            echo "<div class='alert alert-primary' role='alert'>La url es <a href=\"$url_larga\" target=\"_blank\" style=\"color:#fff; text-decoration:underline;\"><strong style='color: #052c65'>$url_corta</strong></a> </div>";
         } else {
             echo "<div class='alert alert-danger'>
                     Ocurrió un error al generar tu URL corta.
